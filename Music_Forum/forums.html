@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форум</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- Навігаційна панель -->
+        <div class="navbar">
+            <nav class="navigation hide" id="navigation">
+                <span class="close-icon" id="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="forums.html">Форуми</a></li>
+                    <li class="nav-item"><a href="posts.html">Пости</a></li>
+                    <li class="nav-item"><a href="detail.html">Головна</a></li>
+                </ul>
+            </nav>
+            <a class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
+            <div class="brand">JustListen</div>
+        </div>
+        <!-- Пошук -->
+        <div class="search-box">
+            <div>
+                <select name="" id="">
+                    <option value="Все">Все</option>
+                    <option value="Назви">Назви</option>
+                    <option value="Опис">Опис</option>
+                </select>
+                <input type="text" name="q" placeholder="Пошук...">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Один підфорум -->
+        <div class="subforum">
+            <div class="subforum-title">
+                <h1>Загальна інформація</h1>
+            </div>
+            <div class="subforum-row">
+                <div class="subforum-icon subforum-column center">
+                    <i class="fa fa-music center"></i>
+                </div>
+                <div class="subforum-description subforum-column">
+                    <h4><a href="#">Новини спільноти</a></h4>
+                    <p>Оголошення, новини та важливі події на форумі.</p>
+                </div>
+                <div class="subforum-stats subforum-column center">
+                    <span>24 дописи | 12 тем</span>
+                </div>
+                <div class="subforum-info subforum-column">
+                    <b><a href="">Останній допис</a></b> від <a href="">JustAUser</a> 
+                    <br>на <small>12 грудня 2020 року</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Інші підфоруми -->
+        <div class="subforum">
+            <div class="subforum-title">
+                <h1>Обговорення музики</h1>
+            </div>
+
+            <!-- Повторювані блоки підфорумів -->
+            <div class="subforum-row">
+                <div class="subforum-icon subforum-column center">
+                    <i class="fa fa-headphones center"></i>
+                </div>
+                <div class="subforum-description subforum-column">
+                    <h4><a href="#">Українська музика</a></h4>
+                    <p>Обговорення українських виконавців, альбомів та концертів.</p>
+                </div>
+                <div class="subforum-stats subforum-column center">
+                    <span>50 дописів | 20 тем</span>
+                </div>
+                <div class="subforum-info subforum-column">
+                    <b><a href="">Останній допис</a></b> від <a href="">MusicFanUA</a> 
+                    <br>на <small>15 квітня 2025 року</small>
+                </div>
+            </div>
+            <hr class="subforum-devider">
+
+            <div class="subforum-row">
+                <div class="subforum-icon subforum-column center">
+                    <i class="fa fa-headphones center"></i>
+                </div>
+                <div class="subforum-description subforum-column">
+                    <h4><a href="#">Світова музика</a></h4>
+                    <p>Виконавці, яких слухає весь світ – діліться враженнями.</p>
+                </div>
+                <div class="subforum-stats subforum-column center">
+                    <span>36 дописів | 18 тем</span>
+                </div>
+                <div class="subforum-info subforum-column">
+                    <b><a href="">Останній допис</a></b> від <a href="">JustAUser</a> 
+                    <br>на <small>10 квітня 2025 року</small>
+                </div>
+            </div>
+            <hr class="subforum-devider">
+
+            <div class="subforum-row">
+                <div class="subforum-icon subforum-column center">
+                    <i class="fa fa-microphone center"></i>
+                </div>
+                <div class="subforum-description subforum-column">
+                    <h4><a href="#">Власна творчість</a></h4>
+                    <p>Діліться своїми треками, бітиками, віршами чи демо.</p>
+                </div>
+                <div class="subforum-stats subforum-column center">
+                    <span>70 дописів | 33 теми</span>
+                </div>
+                <div class="subforum-info subforum-column">
+                    <b><a href="">Останній допис</a></b> від <a href="">IC3ARR0W</a> 
+                    <br>на <small>1 травня 2025 року</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Статистика форуму -->
+    <div class="forum-info">
+        <div class="chart">
+            JustListen – Статистика &nbsp;<i class="fa fa-bar-chart"></i>
+        </div>
+        <span><u>5,369</u> дописів у <u>48</u> темах від <u>8,124</u> учасників.</span><br>
+        <span>Останній допис: <b><a href="#">Дивний пост</a></b> 15 грудня 2021 року від <a href="#">RandomUser</a>.</span><br>
+        <span>Перегляньте <a href="#">останні дописи</a>.</span><br>
+    </div>
+
+    <footer>
+        <span>&copy; Selmi Abderrahim | Всі права захищені</span>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

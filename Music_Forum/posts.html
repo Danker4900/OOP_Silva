@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Just Listen – Форум</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,300&display=swap" rel="stylesheet"/>
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <nav class="navigation hide" id="navigation">
+        <span class="close-icon" id="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="forums.html">Форуми</a></li>
+          <li class="nav-item"><a href="posts.html">Пости</a></li>
+          <li class="nav-item"><a href="detail.html">Головна</a></li>
+        </ul>
+      </nav>
+      <a class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
+      <div class="brand">JustListen</div>
+    </div>
+
+    <div class="search-box">
+      <div>
+        <select>
+          <option value="all">Усе</option>
+          <option value="titles">Назви</option>
+          <option value="descriptions">Опис</option>
+        </select>
+        <input type="text" name="q" placeholder="Пошук тем..." />
+        <button><i class="fa fa-search"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="navigate">
+      <span><a href="index.html">Just Listen – Обговорення</a> >> <a href="#">Популярна музика</a></span>
+    </div>
+
+    <div class="posts-table">
+      <div class="table-head">
+        <div class="status">Статус</div>
+        <div class="subjects">Теми</div>
+        <div class="replies">Відповіді/Перегляди</div>
+        <div class="last-reply">Останнє</div>
+      </div>
+
+      <div class="table-row">
+        <div class="status"><i class="fa fa-fire"></i></div>
+        <div class="subjects">
+          <a href="#">Що ви думаєте про новий альбом The Weeknd?</a><br>
+          <span>Автор: <b><a href="#">user_music</a></b></span>
+        </div>
+        <div class="replies">
+          14 відповідей <br> 540 переглядів
+        </div>
+        <div class="last-reply">
+          1 травня 2025<br>
+          Від: <b><a href="#">melofan123</a></b>
+        </div>
+      </div>
+
+      <!-- Інші рядки можна продублювати та змінити контент -->
+    </div>
+
+    <div class="pagination">
+      Сторінки: <a href="#">1</a><a href="#">2</a><a href="#">3</a>
+    </div>
+  </div>
+
+  <div class="note">
+    <span><i class="fa fa-frown-o"></i> Без активності</span><br>
+    <span><i class="fa fa-book"></i> Мала активність</span><br>
+    <span><i class="fa fa-fire"></i> Популярна тема</span><br>
+    <span><i class="fa fa-rocket"></i> Дуже активна</span><br>
+    <span><i class="fa fa-lock"></i> Закрита тема</span><br>
+  </div>
+
+  <footer>
+    <span>&copy; 2025 Just Listen | Всі права захищено</span>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

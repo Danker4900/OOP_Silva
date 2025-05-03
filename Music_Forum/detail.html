@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JustListen - Форум</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!--NavBar Section-->
+        <div class="navbar">
+            <nav class="navigation hide" id="navigation">
+                <span class="close-icon" id="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="forums.html">Форуми</a></li>
+                    <li class="nav-item"><a href="posts.html">Пости</a></li>
+                    <li class="nav-item"><a href="detail.html">Головна</a></li>
+                </ul>
+            </nav>
+            <a class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
+            <div class="brand">JustListen</div>
+        </div>
+
+        <!--SearchBox Section-->
+        <div class="search-box">
+            <div>
+                <select>
+                    <option value="Everything">Все</option>
+                    <option value="Titles">Назви</option>
+                    <option value="Descriptions">Опис</option>
+                </select>
+                <input type="text" name="q" placeholder="Пошук ...">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+
+    <div class="container">
+        <!--Navigation-->
+        <div class="navigate">
+            <span><a href="">Just Listen - Форуми</a> >> <a href="">Жанри</a> >> <a href="">Улюблені жанри</a></span>
+        </div>
+
+        <!--Topic Section-->
+        <div class="topic-container">
+            <!--Original thread-->
+            <div class="head">
+                <div class="authors">Автор</div>
+                <div class="content">Тема: Улюблені жанри музики (1325 переглядів)</div>
+            </div>
+
+            <div class="body">
+                <div class="authors">
+                    <div class="username"><a href="">HipHopFan</a></div>
+                    <div>Учасник</div>
+                    <img src="https://cdn.pixabay.com/photo/2017/01/31/13/14/avatar-2026510_1280.png" alt="">
+                    <div>Постів: <u>124</u></div>
+                    <div>Очки: <u>3210</u></div>
+                </div>
+                <div class="content">
+                    Мій улюблений жанр — реп. Обожнюю треки з глибокими текстами та потужним бітом. <br>
+                    Особливо кайфую від українського репу — Kalush, Alina Pash, ZWE1HVNDXR. <br><br>
+                    Якщо маєте щось подібне — діліться!
+                    <hr>
+                    З повагою, HipHopFan
+                    <div class="comment">
+                        <button onclick="showComment()">Коментувати</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="comment-area hide" id="comment-area">
+            <textarea name="comment" placeholder="коментар сюди ..."></textarea>
+            <input type="submit" value="Надіслати">
+        </div>
+
+        <!-- Comment 1 -->
+        <div class="comments-container">
+            <div class="body">
+                <div class="authors">
+                    <div class="username"><a href="">MetalHead</a></div>
+                    <div>Учасник</div>
+                    <img src="https://cdn.pixabay.com/photo/2014/04/03/10/32/metal-309102_1280.png" alt="">
+                    <div>Постів: <u>310</u></div>
+                    <div>Очки: <u>7890</u></div>
+                </div>
+                <div class="content">
+                    Метал — це сила. Nothing else matters, як то кажуть 🤘<br>
+                    Слухаю Metallica, Slipknot і українські гурти типу 1914. <br>
+                    Люблю, коли музика рве зсередини.
+                    <div class="comment">
+                        <button onclick="showReply()">Відповісти</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reply Area -->
+        <div class="comment-area hide" id="reply-area">
+            <textarea name="reply" placeholder="відповідь сюди ..."></textarea>
+            <input type="submit" value="Надіслати">
+        </div>
+
+        <!-- Comment 2 -->
+        <div class="comments-container">
+            <div class="body">
+                <div class="authors">
+                    <div class="username"><a href="">ChillVibes</a></div>
+                    <div>Новачок</div>
+                    <img src="https://cdn.pixabay.com/photo/2021/05/11/20/52/avatar-6241198_1280.png" alt="">
+                    <div>Постів: <u>12</u></div>
+                    <div>Очки: <u>450</u></div>
+                </div>
+                <div class="content">
+                    Мені більше заходить лоу-фай або chill-hop. Вмикаю під час навчання чи малювання. <br>
+                    Раджу канал на YouTube — “LoFi Girl”. <br>
+                    Хто ще слухає подібне?
+                    <div class="comment">
+                        <button onclick="showReply()">Відповісти</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reply Area -->
+        <div class="comment-area hide" id="reply-area">
+            <textarea name="reply" placeholder="відповідь сюди ..."></textarea>
+            <input type="submit" value="Надіслати">
+        </div>
+    </div>
+
+    <footer>
+        <span>&copy;  Just Listen Forum | Всі права захищено</span>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
